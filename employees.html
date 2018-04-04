@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 04.2</title>
+    
+    <style>
+        body {
+            width: 90vw;
+            margin: auto;
+            padding: 3em;
+            font-family: sans-serif;
+        }
+        h2 {
+            width: 20vw;
+            float: left;
+            text-align: right;
+            margin: 0 2em;
+        }
+        section {
+            float: left;
+            width: 20vw;
+            margin-bottom: 1em;
+        }
+        form, table {width: 60vw}
+        section::after {clear: both;}
+        h2, td {color: #009999; font-weight: lighter;}
+        label, th {font-weight: normal;}
+        input {
+            width: 80%;
+            margin: .5em 0;
+            border: 1px solid #eee;
+            padding: .5em;
+        }
+        input[type="button"]:hover {
+            background: #009999;
+            color: #fff;
+        }
+        form input[type="button"] {width: 20%;}
+        th {text-align: left;}
+        th, td {padding: 1em 0;}
+    </style>
+    
+</head>
+<body>
+   <h2>Employee Management Application</h2>
+    <section>
+        <form action="">
+           <label for="">Name</label><br>
+            <input type="text" id="name"><br>
+        
+            <label for="">Title</label><br>
+            <input type="text" id="title"><br>
+        
+            <label for="">Extension</label><br>
+            <input type="text" id="id"><br>
+        
+            <input type="button" value="add" id="add">
+        </form>
+        
+        <br><br>
+        <table id="table">
+            <th>Name</th>
+            <th>Title</th>
+            <th>Extension</th>
+        </table>
+    </section>
+    
+    <script src="js/employee-management.js"></script>
+</body>
+</html>
